@@ -129,6 +129,7 @@ async function main() {
 
 //Listing
 app.use("/listings", listingsRouter);
+app.use("/", listingsRouter);
 
 //Reviews 
 app.use("/listings/:id/reviews", reviewsRouter);
