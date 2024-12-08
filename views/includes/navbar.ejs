@@ -40,6 +40,34 @@
 }
 
 
+
+
+/* Default navbar background */
+ .navbar {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hide background behind menu items on mobile when collapsed */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: #f8f9fa !important; /* Ensure background is visible when expanded */
+      /* padding: 0; Remove any padding when collapsed */
+    }
+
+    .navbar-nav {
+      background-color: #f8f9fa; /* Add background color to the menu to prevent overlap */
+      padding: 1rem; /* Ensure menu has space on collapsed view */
+      border-radius: 5px; /* Optional: Add a border radius to the menu */
+    }
+
+    .navbar-toggler-icon {
+      background-color: transparent; /* Optional: makes the toggle button transparent */
+    }
+  }
+
+
+
 </style>
 
 
